@@ -1,0 +1,23 @@
+.wrapper {
+  --color: #0084ff;
+  --text-color: #fff;
+  padding: 1rem;
+  background: var(--color);
+  width: fit-content;
+  border-radius: 1rem;
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 0.25rem;
+  box-shadow: #00000065 0.25rem 0.25rem 0.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  user-select: none;
+}
+.wrapper:hover {
+  scale: 1.05;
+}
+
+.wrapper:active {
+  box-shadow: #00000065 0.0625rem 0.0625rem 0.1rem;
+  translate: 0.125rem 0.125rem;
+}

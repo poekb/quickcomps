@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100%;
+  min-height: 100svh;
+  @apply bg-zinc-700;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  @apply bg-zinc-800;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-600 rounded-full;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-zinc-500;
+}
